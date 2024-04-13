@@ -7,10 +7,23 @@
 button{
     width: 100%;
 }
-#exampleModalLabel{
-    align-items: center;
+#exampleModalLabel h5{
+    font-size: 1.5rem;
     
 }
 .modal-content{
     width: 900px;
+}
+.modal-body{
+    width: 900px;
+    
+}
+.modal-content{
+    height:500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 30px;
 }
