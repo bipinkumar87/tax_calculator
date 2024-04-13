@@ -1,0 +1,16 @@
+.container{
+    border: 2px solid rgb(122, 120, 120);
+    margin-top: 10%;
+    padding: 30px;
+    width: 40%;
+}
+button{
+    width: 100%;
+}
+#exampleModalLabel{
+    align-items: center;
+    
+}
+.modal-content{
+    width: 900px;
+}
