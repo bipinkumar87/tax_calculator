@@ -4,9 +4,18 @@ const extra=document.querySelector(".extra");
 const age=document.querySelector(".age");
 const duration=document.querySelector(".duration");
 const calculate=document.querySelector("#calculate");
+// function myFunction() {
+//     var x = document.getElementById("text").required;
+    
+//   }
 calculate.addEventListener("click",(e)=>{
+    
     e.preventDefault;
-    if((parseInt(income.value)+parseInt(extra.value))-parseInt(duration.value)<=800000){
+    if((income.value=="") ||(extra.value=="")||(age.value=="")||(duration.value=="")){
+        document.getElementById("alrt").innerText="some field are empty"
+    }
+    // myFunction()
+     else if((parseInt(income.value)+parseInt(extra.value))-parseInt(duration.value)<=800000){
         result.value=(parseInt(income.value)+parseInt(extra.value))-parseInt(duration.value);
     }
     else if((parseInt(income.value)+parseInt(extra.value))-parseInt(duration.value)>800000 && age.value<40){

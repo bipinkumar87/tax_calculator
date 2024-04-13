@@ -13,24 +13,24 @@
   <body>
    
     <div class="container">
-        <form>
+        <form action="#">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Enter gross annual income</label>
-              <input type="income" class="form-control income" id="text">
+              <input type="text" class="form-control income" id="text" required>
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label ">Enter Extra income</label>
-                <input type="text" class="form-control extra" id="extraIncome">
+                <input type="text" required class="form-control extra" id="extraIncome" >
               </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Enter age group</label>
-              <input type="number" class="form-control age" id="age">
+              <input type="number" required class="form-control age" id="age">
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Enter Total applicable deductions</label>
-                <input type="text" class="form-control duration" id="durations">
+                <input type="text" class="form-control duration" id="durations" required>
               </div>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="calculate">Submit</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="calculate" onclick="myFunction()">Submit</button>
   
   <!-- Modal -->
   <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -42,7 +42,8 @@
         </div>
         <div class="modal-body">
           <input type="text" class="result">
-          <p>after text deductions</p>
+          <p>after tax deductions</p>
+          <samp id="alrt" style="color: red;"></samp>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
